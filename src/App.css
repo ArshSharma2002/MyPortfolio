@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: url(./components/images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 15px 30px;
+    padding: 4px 8px;
+}
+
+ul li a{
+    color: rgb(28, 49, 116);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 6px;
+    text-shadow: 2px 2px 4px white;
+}
+
+ul li a:hover{
+    color: rgb(28, 49, 116);
+    border-bottom: 4px solid white;
+    text-shadow: 2px 2px 4px white;
+}
+
+.fontStyle {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.boldFont{
+    font-family:'Titillium Web', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2.8rem;
+}
+
+div.social {
+  height: 15px;
+  border-radius: 5px;
+  width: 23%;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding: 2px;
+}
+
+span.handles {
+  text-align: center;
+  margin: 2px 2px;
+}
+
+div#fb {
+  background-color: #4267b2;
+}
+
+div#fb:hover {
+  transition: all 1s ease-out;
+  height: 58px;
+  background-image: url(./components/images/icon_facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#insta {
+  background-color: #fd1d1d;
+}
+
+div#insta:hover {
+  transition: all 1s ease-out;
+  height: 58px;
+  background-image: url(./components/images/icon_instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#linkedIn {
+  background-color: #2867b2;
+}
+
+div#linkedIn:hover {
+  transition: all 1s ease-out;
+  height: 58px;
+  background-image: url(./components/images/icon_linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#Github {
+  background-color: #333;
+}
+
+div#Github:hover {
+  transition: all 1s ease-out;
+  height: 58px;
+  background-image: url(./components/images/icon_github.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+img#profile-pic {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+
+div.socialSection{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.socialLinks{
+    margin: 6px;
+}
