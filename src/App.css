@@ -8,7 +8,7 @@
 
 body{
     color: white;
-    background: url(./components/images/bg-2.jpg);
+    background: url(./components/images/bg-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,18 +29,17 @@ ul li{
 }
 
 ul li a{
-    color: rgb(28, 49, 116);
+    color: white;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 6px;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px black;
 }
 
 ul li a:hover{
-    color: rgb(28, 49, 116);
-    border-bottom: 4px solid white;
-    text-shadow: 2px 2px 4px white;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(148, 144, 144);
 }
 
 .fontStyle {
@@ -53,6 +52,17 @@ ul li a:hover{
     text-shadow: 2px 2px 4px black;
     font-size: 2.8rem;
 }
+
+.boldFontHome{
+    font-family:'Titillium Web', sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+div#homePage{
+  position: relative;
+  top: 4.5rem;
+}
+
 
 div.social {
   height: 15px;
