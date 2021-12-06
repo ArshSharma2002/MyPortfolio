@@ -10,15 +10,14 @@ body{
     color: white;
     background: url(./components/images/bg-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 ul{
     display: flex;
     flex-direction: row;
     justify-content: right;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 ul li{
@@ -61,6 +60,15 @@ ul li a:hover{
 div#homePage{
   position: relative;
   top: 4.5rem;
+}
+
+
+div.points{
+  border-radius:50%;
+  color:black;
+  background-color:white;
+  height:50px;
+  width:50px;
 }
 
 
