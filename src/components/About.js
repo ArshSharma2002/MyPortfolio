@@ -3,8 +3,8 @@ import profilePic from './images/profile-pic(2).png'
 
 function About() {
     return (
-        <>
-        <div className="d-flex">
+        <div className="container my-5 py-4" >
+      <div className="d-flex">
       <div
         className="
           col-md-3
@@ -16,7 +16,7 @@ function About() {
       >
         <img id="profile-pic" src={profilePic} alt="" />
       </div>
-      <div className="col-md-9 px-3 py-3 my-2 d-flex justify-content-center align-items-center flex-column">
+      <div className="col-md-9 px-3 py-3 my-2 mx-5 d-flex justify-content-center align-items-center flex-column">
         <h2>
           I'm
           <b className="boldFont"> Arsh Shrama </b>
@@ -30,7 +30,7 @@ function About() {
         </p>
       </div>
     </div>
-    </>
+    </div>
     )
 }
 
