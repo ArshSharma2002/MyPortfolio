@@ -8,15 +8,31 @@
 
 body{
     color: white;
-    /* background-color: #0b213d; */
-    background: url(./components/images/bg-1.jpg);
+    background: url(./components/images/bg-3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 nav{
   background: rgba(8, 32, 68, 0.5);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.homePlacement{
+  margin-bottom: 20%;
+}
+
+.aboutPlacement{
+  padding: 13%;
+}
+
+.resumePlacement{
+  position: relative;
+  bottom: 13%;
 }
 
 ul{
@@ -33,24 +49,24 @@ ul li{
     padding: 4px 8px;
 }
 
-ul li a{
-    color: white;
-    text-decoration: none;
+nav ul li a{
+  color: white;
+  text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;
     padding-bottom: 6px;
     text-shadow: 2px 2px 4px black;
-}
-
-ul li a:hover{
+  }
+  
+  nav ul li a:hover{
     color: white;
     border-bottom: 2px solid white;
     text-shadow: 2px 2px 4px black;
 }
 
 .fontStyle {
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 4px black;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px black;
 }
 
 .boldFont{
@@ -62,8 +78,8 @@ ul li a:hover{
 .boldFontHome{
     font-family:'Titillium Web', sans-serif;
     text-shadow: 2px 2px 4px black;
-}
-
+  }
+  
 div#homePage{
   position: relative;
   top: 4.5rem;
@@ -72,12 +88,33 @@ div#homePage{
 
 div.points{
   border-radius:50%;
-  color:black;
-  background-color:white;
+  background-color:rgb(14, 27, 61);
+  border: 1px solid white;
   height:50px;
   width:50px;
 }
 
+.resumeBtn{
+  background-color: rgb(14, 27, 61);
+  outline: none;
+  padding: 7px;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.resumeBtn a{
+  text-decoration: none;
+  color: white;
+}
+
+.resumeBtn:hover{
+  background: none;
+}
+
+.resumeDiv{
+  height: 65vh;
+  width: 100vw;
+}
 
 div.social {
   height: 15px;

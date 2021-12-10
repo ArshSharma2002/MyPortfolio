@@ -3,11 +3,12 @@ import profilePic from './images/profile-pic(2).png'
 
 function About() {
     return (
-        <div className="container my-5 py-4" >
+      <div>
+      <div id="aboutComp" className="aboutPlacement container my-5" >
       <div className="d-flex">
       <div
         className="
-          col-md-3
+        col-md-3
           my-2
           d-flex
           align-items-center
@@ -26,9 +27,10 @@ function About() {
           currently pursuing
           my bachelor's in Computer Science & Engineering.
           Also works as a freelancer and always try to learn something new.
-          You can also check me out on Fiverr and Freelancer.com .
+          You can also check me out on <a href="https://www.fiverr.com/arshsharma2002?up_rollout=true" target="__blank"> Fiverr</a> and <a href="https://www.freelancer.com/u/arshsharma2002" target="__blank">Freelancer.com </a>
         </p>
       </div>
+    </div>
     </div>
     </div>
     )
