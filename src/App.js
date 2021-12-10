@@ -6,7 +6,7 @@ import LoadingBar from 'react-top-loading-bar'
 import Home from "./components/Home";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Perks from "./components/Perks";
+// import Perks from "./components/Perks";
 import Resume from "./components/Resume";
 
 function App() {

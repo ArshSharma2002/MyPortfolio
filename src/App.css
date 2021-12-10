@@ -8,10 +8,10 @@
 
 body{
     color: white;
-    background: url(./components/images/bg-1.jpg);
+    background: url(./components/images/bg-3.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 nav{
@@ -32,7 +32,7 @@ nav{
 
 .resumePlacement{
   position: relative;
-  bottom: 10%;
+  bottom: 13%;
 }
 
 ul{
