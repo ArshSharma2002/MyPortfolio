@@ -28,10 +28,10 @@ function Navbar(props) {
         
         <nav>
             <ul>
-                <li> <a href="/" onClick={() => setProgress(100)} ><i className="fas fa-home"></i> Home</a></li>
-                <li> <a href="#aboutComp" onClick={() => setProgress(100)} ><i className="fas fa-address-card"></i> About</a></li>
+                <li> <a href="/" onClick={() => setProgress(100)} ><i className="navIcons fas fa-home"></i> Home</a></li>
+                <li> <a href="#aboutComp" onClick={() => setProgress(100)} ><i className="navIcons fas fa-address-card"></i> About</a></li>
                 {/* <li> <a href="#perksComp" onClick={() => setProgress(100)} ><i className="fas fa-award"></i> Perks</a></li> */}
-                <li><a href="#resumeComp" onClick={() => setProgress(100)} ><i className="fas fa-file"></i> Resume</a></li>
+                <li><a href="#resumeComp" onClick={() => setProgress(100)} ><i className="navIcons fas fa-file"></i> Resume</a></li>
             </ul>
         </nav>
     )

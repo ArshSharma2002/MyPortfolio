@@ -11,7 +11,7 @@ function Footer(props) {
         <a
           target="__blank"
           className="socialLinks"
-          href="https://www.google.com"
+          href="https://www.facebook.com/arsh.sharma.752487"
           onClick={() => setProgress(100)}
         >
           <div className="social" id="fb"></div>
@@ -41,6 +41,8 @@ function Footer(props) {
           <div className="social" id="Github"></div>
         </a>
       </div>
+      {/*  eslint-disable-next-line */}
+      <marquee behavior="" direction="">Developed with ❤️ by Arsh</marquee>
     </>
   );
 }
