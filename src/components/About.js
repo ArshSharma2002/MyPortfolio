@@ -5,7 +5,7 @@ function About() {
     return (
       <div>
       <div id="aboutComp" className="aboutPlacement container my-5" >
-      <div className="d-flex">
+      <div  className="aboutResposive d-flex ">
       <div
         className="
         col-md-3
@@ -20,7 +20,7 @@ function About() {
       <div className="col-md-9 px-3 py-3 my-2 mx-5 d-flex justify-content-center align-items-center flex-column">
         <h2>
           I'm
-          <b className="boldFont"> Arsh Shrama </b>
+          <b className="boldFont"> Arsh Sharma </b>
           , a <strong className="boldFont" > full stack web developer </strong>.
         </h2>
         <p className="fontStyle" >

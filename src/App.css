@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    color: white;
-    background: url(./components/images/bg-3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+  color: white;
+  background: url(./components/images/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-nav{
+nav {
   background: rgba(8, 32, 68, 0.5);
   position: sticky;
   top: 0;
@@ -22,79 +22,79 @@ nav{
   left: 0;
 }
 
-.homePlacement{
-  margin-bottom: 20%;
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutPlacement{
-  padding: 13%;
+ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 15px 30px;
+  padding: 4px 8px;
 }
 
-.resumePlacement{
-  position: relative;
-  bottom: 13%;
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-}
-
-ul li{
-    text-decoration: none;
-    list-style: none;
-    margin: 15px 30px;
-    padding: 4px 8px;
-}
-
-nav ul li a{
+nav ul li a {
   color: white;
   text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding-bottom: 6px;
-    text-shadow: 2px 2px 4px black;
-  }
-  
-  nav ul li a:hover{
-    color: white;
-    border-bottom: 2px solid white;
-    text-shadow: 2px 2px 4px black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 6px;
+  text-shadow: 2px 2px 4px black;
 }
+
+nav ul li a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* ****** font-styles & size ******* */
 
 .fontStyle {
   font-size: 1.3rem;
   text-shadow: 2px 2px 4px black;
 }
 
-.boldFont{
-    font-family:'Titillium Web', sans-serif;
-    text-shadow: 2px 2px 4px black;
-    font-size: 2.8rem;
+.boldFont {
+  font-family: "Titillium Web", sans-serif;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2.8rem;
 }
 
-.boldFontHome{
-    font-family:'Titillium Web', sans-serif;
-    text-shadow: 2px 2px 4px black;
-  }
-  
-div#homePage{
+.boldFontHome {
+  font-family: "Titillium Web", sans-serif;
+  text-shadow: 2px 2px 4px black;
+  font-size: 3.5rem;
+}
+
+/* **** placements & adjustments **** */
+
+.homePlacement {
+  margin-bottom: 20%;
+}
+
+.aboutPlacement {
+  padding: 13%;
+}
+
+
+div#homePage {
   position: relative;
   top: 4.5rem;
 }
 
-
-div.points{
-  border-radius:50%;
-  background-color:rgb(14, 27, 61);
+div.points {
+  border-radius: 50%;
+  background-color: rgb(14, 27, 61);
   border: 1px solid white;
-  height:50px;
-  width:50px;
+  height: 50px;
+  width: 50px;
 }
 
-.resumeBtn{
+.resumeBtn {
   background-color: rgb(14, 27, 61);
   outline: none;
   padding: 7px;
@@ -102,16 +102,16 @@ div.points{
   border: 1px solid white;
 }
 
-.resumeBtn a{
+.resumeBtn a {
   text-decoration: none;
   color: white;
 }
 
-.resumeBtn:hover{
+.resumeBtn:hover {
   background: none;
 }
 
-.resumeDiv{
+.resumeDiv {
   height: 65vh;
   width: 100vw;
 }
@@ -187,13 +187,131 @@ img#profile-pic {
   border: 2px solid grey;
 }
 
-div.socialSection{
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+div.socialSection {
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  left: 0px;
 }
 
-.socialLinks{
-    margin: 6px;
+.socialLinks {
+  margin: 6px;
+}
+
+marquee{
+  display: none;
+}
+
+/* ******* Responsiveness & media queries ****** */
+
+@media only screen and (max-width: 1000px) {
+  .fontStyle {
+    font-size: 1.1rem;
+  }
+
+  .boldFont {
+    font-size: 2.3rem;
+  }
+
+  img#profile-pic {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 1px solid grey;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutResposive {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fontStyle {
+    font-size: 1rem;
+  }
+
+  .boldFont {
+    font-size: 1.8rem;
+  }
+
+  img#profile-pic {
+    height: 200px;
+    width: 200px;
+  }
+
+  div.social {
+    height: 15px;
+    border-radius: 5px;
+    width: 21%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  body,nav {
+    color: white;
+    background-color: rgb(14, 27, 61);
+  }
+
+  ul li {
+    margin: 15px 25px;
+    padding: 2px 4px;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    padding-bottom: 4px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  nav ul li a {
+    font-size: 1rem;
+    padding-bottom: 4px;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  nav ul li a {
+    font-size: 1.2rem;
+    padding-bottom: 4px;
+  }
+
+  .navIcons {
+    display: none;
+  }
+
+  .fontStyle {
+    font-size: 1.2rem;
+  }
+
+  .boldFont {
+    font-size: 2.5rem;
+  }
+
+  .boldFontHome{
+    font-size: 3.2rem;
+  }
+
+  .homePlacement {
+    margin-bottom: 90%;
+    padding-top: 20%;
+  }
+  
+  .aboutPlacement {
+    padding: 30%;
+  }
+  
+  
+.resumeBtn {
+  background-color: rgb(14, 27, 61);
+  outline: none;
+  margin-bottom: 60%;
+}
+
+marquee{
+  display: block;
+}
+
 }
