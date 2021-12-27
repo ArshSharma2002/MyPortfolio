@@ -12,6 +12,28 @@ import Resume from "./components/Resume";
 function App() {
 
   const [progress, setProgress] = useState(0)
+  const [modeLabel, setModeLabel] = useState("☀️")
+
+  const toggleMode = () => {
+    if (modeLabel === "☀️") {
+      setModeLabel("🌙");
+      document.getElementById('body').classList.replace("initialBg","darkBg");
+      document.getElementById('nav').style.background="rgba(8, 32, 68, 0.5)";
+      document.getElementsByClassName('resumeBtn')[0].style.backgroundColor="rgb(14, 27, 61)";
+      document.getElementsByTagName("h5")[0].classList.remove("text-muted")
+      
+      
+    } else {
+      
+      setModeLabel("☀️");
+      document.getElementById('body').classList.replace("darkBg","initialBg");
+      document.getElementById('nav').style.background="rgba(218,209,228,0.5)";
+      document.getElementsByClassName('resumeBtn')[0].style.backgroundColor="#7584ad";
+      document.getElementsByTagName("h5")[0].classList.add("text-muted")
+      
+    }
+
+  };
 
   return (
 
@@ -24,7 +46,7 @@ function App() {
         onLoaderFinished={() => setProgress(0)}
       />
 
-      <Navbar setProgress={setProgress}/>
+      <Navbar toggleMode={toggleMode} setProgress={setProgress} modeLabel={modeLabel} />
       <Home/>
       <About/>
       {/* <Perks/> */}
