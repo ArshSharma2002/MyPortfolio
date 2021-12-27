@@ -8,14 +8,23 @@
 
 body {
   color: white;
-  background: url(./components/images/bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.initialBg{
+  
+  background-image: url(./components/images/whiteCloud-bg.jpg);
+}
+
+.darkBg{
+  background-image: url(./components/images/space-bg.jpg);
+}
+
 nav {
-  background: rgba(8, 32, 68, 0.5);
+  /* background: rgba(8, 32, 68, 0.5); */
+  background: rgba(218,209,228,0.5);
   position: sticky;
   top: 0;
   right: 0;
@@ -80,6 +89,12 @@ nav ul li a:hover {
   padding: 13%;
 }
 
+a{
+  text-decoration: underline;
+  color: rgb(31, 86, 238);
+  text-shadow: none;
+}
+
 
 div#homePage {
   position: relative;
@@ -95,7 +110,8 @@ div.points {
 }
 
 .resumeBtn {
-  background-color: rgb(14, 27, 61);
+  /* background-color: rgb(14, 27, 61); */
+  background-color:#7584ad;
   outline: none;
   padding: 7px;
   border-radius: 15px;
@@ -107,9 +123,9 @@ div.points {
   color: white;
 }
 
-.resumeBtn:hover {
+/* .resumeBtn:hover {
   background: none;
-}
+} */
 
 .resumeDiv {
   height: 65vh;
@@ -222,6 +238,18 @@ marquee{
 }
 
 @media only screen and (max-width: 770px) {
+
+
+  ul li {
+    margin: 18px 18px;
+    padding: 2px 4px;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding-bottom: 4px;
+  }
+
   .aboutResposive {
     flex-wrap: wrap;
     justify-content: center;
@@ -248,42 +276,86 @@ marquee{
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 650px) {
   body,nav {
     color: white;
-    background-color: rgb(14, 27, 61);
-  }
-
-  ul li {
-    margin: 15px 25px;
-    padding: 2px 4px;
-  }
-
-  nav ul li a {
-    font-size: 1.3rem;
-    padding-bottom: 4px;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  nav ul li a {
-    font-size: 1rem;
-    padding-bottom: 4px;
-  }
-}
-
-@media only screen and (max-width: 422px) {
-  nav ul li a {
-    font-size: 1.2rem;
-    padding-bottom: 4px;
   }
 
   .navIcons {
     display: none;
   }
 
-  .fontStyle {
+  ul li {
+    margin: 13px 10px;
+    padding: 2px 2px;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+    padding-bottom: 4px;
+  }
+  
+  div#fb {
+    background-color: #4267b2;
+    height: 37px;
+    animation-name: oddSocialAnimations;
+    animation-duration:4s;
+    background-image: url(./components/images/icon_facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div#insta {
+    background-color: #fd1d1d;
+    height: 37px;
+    animation-name: evenSocialAnimations;
+    animation-duration:4s;
+    background-image: url(./components/images/icon_instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  div#linkedIn {
+    background-color: #2867b2;
+    height: 37px;
+    animation-name: oddSocialAnimations;
+    animation-duration: 4s;
+    background-image: url(./components/images/icon_linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  div#Github {
+    background-color: #333;
+    height: 37px;
+    animation-name: evenSocialAnimations;
+    animation-duration: 4s;
+    background-image: url(./components/images/icon_github.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  
+}
+
+@media only screen and (max-width: 490px) {
+  nav ul li a {
     font-size: 1.2rem;
+    padding-bottom: 4px;
+  }
+  
+}
+
+@media only screen and (max-width: 422px) {
+  nav ul li a {
+    font-size: 1.15rem;
+    padding-bottom: 4px;
+  }
+
+  .fontStyle {
+    font-size: 1.05rem;
   }
 
   .boldFont {
@@ -295,17 +367,17 @@ marquee{
   }
 
   .homePlacement {
-    margin-bottom: 90%;
+    margin-bottom: 70%;
     padding-top: 20%;
   }
   
   .aboutPlacement {
-    padding: 30%;
+    padding: 40%;
   }
   
   
 .resumeBtn {
-  background-color: rgb(14, 27, 61);
+  background-color: #7584ad;
   outline: none;
   margin-bottom: 60%;
 }
@@ -314,4 +386,43 @@ marquee{
   display: block;
 }
 
+}
+
+
+/* social animations */
+
+@keyframes oddSocialAnimations{
+  0%{
+    height: 40px;
+  }
+  25%{
+    height: 60px;
+  }
+  50%{
+    height: 40px;
+  }
+  75%{
+    height: 55px
+  }
+  100%{
+    height: 37px;
+  }
+}
+
+@keyframes evenSocialAnimations{
+  0%{
+    height: 50px;
+  }
+  25%{
+    height: 37px;
+  }
+  50%{
+    height: 50px;
+  }
+  75%{
+    height: 65px;
+  }
+  100%{
+    height: 37px;
+  }
 }

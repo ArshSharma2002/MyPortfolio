@@ -2,7 +2,7 @@ import React from 'react'
 // import {Link,useLocation } from "react-router-dom";
 
 function Navbar(props) {
-    const {setProgress} = props;
+    const {setProgress,modeLabel,toggleMode} = props;
 
     // let location = useLocation();
 
@@ -26,12 +26,19 @@ function Navbar(props) {
 
     return (
         
-        <nav>
+        <nav id='nav'>
             <ul>
                 <li> <a href="/" onClick={() => setProgress(100)} ><i className="navIcons fas fa-home"></i> Home</a></li>
                 <li> <a href="#aboutComp" onClick={() => setProgress(100)} ><i className="navIcons fas fa-address-card"></i> About</a></li>
                 {/* <li> <a href="#perksComp" onClick={() => setProgress(100)} ><i className="fas fa-award"></i> Perks</a></li> */}
                 <li><a href="#resumeComp" onClick={() => setProgress(100)} ><i className="navIcons fas fa-file"></i> Resume</a></li>
+                <div class="form-check form-switch">
+                <input class="form-check-input" onClick={toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                {/* <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i> */}
+                    <label class="form-check-label" htmlFor="flexSwitchCheckDefault">{modeLabel}</label>
+                </div>
+
             </ul>
         </nav>
     )
