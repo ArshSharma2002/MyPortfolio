@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from './images/profile-pic(2).png'
+import profilePic from './images/profile-pic(4).png'
 
 function About() {
     return (
@@ -27,7 +27,7 @@ function About() {
           currently pursuing
           my bachelor's in Computer Science & Engineering.
           Also works as a freelancer and always try to learn something new.
-          You can also check me out on <a href="https://www.fiverr.com/arshsharma2002?up_rollout=true" target="__blank"> Fiverr</a> and <a href="https://www.freelancer.com/u/arshsharma2002" target="__blank">Freelancer.com </a>
+          You can also check me out on <a href="https://www.fiverr.com/arshsharma2002?public_mode=true" target="__blank"> Fiverr</a> and <a href="https://www.freelancer.com/u/arshsharma2002" target="__blank">Freelancer.com </a>
         </p>
       </div>
     </div>
