@@ -2,7 +2,6 @@ import React from "react";
 
 function Footer(props) {
 
-  
   const {setProgress} = props;
 
   return (
