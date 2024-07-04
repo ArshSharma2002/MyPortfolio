@@ -1,5 +1,6 @@
 import React from 'react'
-import profilePic from './images/profile-pic(4).png'
+// import profilePic from './images/profile-pic(4).png'
+import profilePic from './images/profile-pic.png'
 
 function About() {
     return (
